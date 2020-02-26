@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="titansoft.android.tes">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity
+            android:name=".menu.MenuActivity"
+            android:label="Test Application"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".menu.balance.BalanceActivity"
+            android:label="Balance"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".menu.itemInfo.ItemInfoActivity"
+            android:label="Item Detail"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".menu.player.PlayerActivity"
+            android:label="List Player"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".menu.rank.UserRankActivity"
+            android:label="List Rank"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Rank"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".menu.splash.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
